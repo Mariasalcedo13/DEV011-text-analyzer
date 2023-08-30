@@ -6,7 +6,40 @@
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<header>
+<h1>Analizador de texto</h1>
+</header>
+<section>
+<nav>
 
+  <!-- se habilita en js class="contenedor-li y con li para que aparezcan toda los li  -->
+  <ul class="contenedor-li">
+    <li class = "" data-testid="word-count">Caracteres:</li>
+    <li class = "" data-testid="word-count">Caracteres sin Espacio:</li>
+    <li class = "" data-testid="character-no-spaces-count">Palabras:</li>
+    <li class = "" data-testid="number-count">Numeros:</li>
+    <li class = "" data-testid="number-sum">Suma Numeros:</li>
+    <li class = "" data-testid="word-length-average">Promedio Longitud:</li>
+  </ul>
+</nav>
+</section>
+
+<main>
+
+  <!-- se habilita  en js index queryselector con textarea name="user-input"  -->
+  <form>
+    <label for="comentario">Escribe para analizar:</label><br>
+    
+    <textarea name="user-input" rows="4" cols="60"></textarea>
+  </form>
+
+<!-- es llamado el boton con el id en el index js -->
+<button id="reset-button">Limpiar Metricas</button>
+</main>
+
+<footer>
+  <p> AUTOR: Desarrolladora Maria Olga Salcedo Royero &copy; 2023</p>
+</footer>
 <body>
   <script src="index.js" type="module"></script>
 </body>

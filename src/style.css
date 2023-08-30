@@ -1,0 +1,49 @@
+
+h1{ text-align: center;
+   
+}
+body{
+    background-color: #f4f0f7;
+    
+}
+/*nav*/
+.contenedor-li {
+    list-style-type: none;
+    display:flex;   
+    justify-content:center;
+    display: grid; /* crear cuadriculas en las li*/
+    grid-template-columns: repeat(3, 200px); /* el primer numero son los grupos que quieres formar y el numero en px es el tamaño de la posicion  a lo largo*/
+    gap: 2px; /* es el espacio que esta entre los li una debajo de otro*/
+  
+}
+.contenedor-li li {
+    padding: 5px;
+    border: 1px solid #b1b0b0; /* se Agrega un borde a cada <li> */
+    margin: 5px;
+    border-radius: 9px;  
+    text-align: center;
+    border: 1px solid #810af83c;
+    background-color: rgba(177, 169, 184, 0.477);
+}
+
+/* espacio para escribir*/
+textarea[name="user-input"] {
+    border: 2px solid #75c6f6 ;
+    border-radius:10px;
+ }
+ main{
+    text-align: center;
+}
+
+/*button*/
+#reset-button{
+    border: 1px solid #9358d2;
+    background-color: rgb(126, 103, 146);
+    padding: 8px;
+    color: aliceblue;
+    border-radius:10px;
+   
+ }
+ footer{
+    text-align: right;
+ }
