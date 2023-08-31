@@ -42,12 +42,19 @@ const analyzer = {
 
 getAverageWordLength: (text) => {
    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-   if(typeof text !== "string" ){
+   if (typeof text !== "string") {
     return 0;
   }
-  const palabraLongitud = text.trim().split(/\s+/);
-  return palabraLongitud.reduce((total, palabra2) => total + palabra2.length,0) / palabraLongitud.length;
- 
+
+  const words = text.split(/\s+/);
+  let totalLength = 0;
+
+  for (let i = 0; i < words.length; i++) {
+    totalLength += words[i].length;
+  }
+
+  return totalLength / words.length;
+
 },
 // trim elimina los espacio en blanco en una cadena de texto
 // split(/s+/) se usa para dividir una cadena en espacio blanc

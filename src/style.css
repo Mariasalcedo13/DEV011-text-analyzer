@@ -6,6 +6,25 @@ body{
     background-color: #f4f0f7;
     
 }
+/*li*/
+.Caracteres{
+    background-color: rgb(187, 122, 204);
+}
+.CaracteressinEspacio{
+    background-color: rgba(188, 122, 204, 0.62);
+}
+.Palabras{
+    background-color: rgba(188, 122, 204, 0.503);
+}
+.Numeros{
+    background-color: rgba(188, 122, 204, 0.388);
+}
+.SumaNumeros{
+    background-color: rgba(188, 122, 204, 0.265);
+}
+.PromedioLongitud{
+    background-color: rgba(188, 122, 204, 0.126);
+}
 /*nav*/
 .contenedor-li {
     list-style-type: none;
@@ -22,8 +41,7 @@ body{
     margin: 5px;
     border-radius: 9px;  
     text-align: center;
-    border: 1px solid #810af83c;
-    background-color: rgba(177, 169, 184, 0.477);
+    
 }
 
 /* espacio para escribir*/
