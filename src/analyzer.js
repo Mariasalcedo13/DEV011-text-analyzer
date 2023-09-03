@@ -5,8 +5,10 @@ const analyzer = {
       return 0;
     } else {
       const contarPalabras = text.trim().split(/\s+/);
-      return contarPalabras.length;
+      const noNumeros = contarPalabras.filter(element => isNaN(element));
+      return noNumeros .length;
     }
+
   },
  
 // trim elimina los espacio en blanco en una cadena de texto
@@ -30,11 +32,15 @@ const analyzer = {
 
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
-
-    const almacenText = text.replace(/[^\w]/g,'');
-    return almacenText.length;
+    const nosignos = text.replace(/[.,; ?¿!¡{}:'"-]/gi,"").split("");
+    console.log(nosignos)
+    if (nosignos[0]==="") {
+      return 0
+    }
+    else { 
+      return nosignos.length
+    }
   },
-
   // lo que se hizo fue que con la variable almacenText almacenar la cadena de texto despues de eliminar y los signo de puntuacion 
 // busca replace todas las expresiones que no sean letras ni numeros
 
@@ -53,7 +59,9 @@ getAverageWordLength: (text) => {
     totalLength += words[i].length;
   }
 
-  return totalLength / words.length;
+  const averageLength = totalLength / words.length;
+
+  return parseFloat(averageLength.toFixed(2));
 
 },
 // trim elimina los espacio en blanco en una cadena de texto
@@ -65,23 +73,26 @@ getAverageWordLength: (text) => {
 
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    const contarNumeros = text.match(/\d+/g) || [];
-    return contarNumeros.length;
+    const numbers = text.match(/\b\d+(\.\d+)?\b/g);
+    if (!numbers || numbers.length === 0) {
+      return 0;
+    }
+    return parseFloat(numbers.length);
   },
   
 
 
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    const numbers =text.match(/\d+/g);
-    if (numbers){
-      const suma = numbers.reduce((acomuladorReduccion , numeroActual)=> acomuladorReduccion + parseInt(numeroActual),0)
-      return suma;
-     
-    }else{
+    const numbers = text.match(/\b\d+(\.\d+)?\b/g); 
+
+    if (numbers && numbers.length > 0) {
+      const suma = numbers.reduce((acumulador, numeroActual) => acumulador + parseFloat(numeroActual), 0);
+      return parseFloat(suma.toFixed(1));
+    } else {
       return 0;
     }
-  },
+  }
 };
 //match acomula los numero en un dentro de un texto si se encuentro un numero pasaria reduce()donde ahi se suma y toma el valor inicial en 0
 export default analyzer;

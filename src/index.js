@@ -9,18 +9,18 @@ const metricasDeCadaItems = document.querySelectorAll('.contenedor-li li');
 const pruebaMetricas = () => {
   const text = userInput.value;
   metricasDeCadaItems[0].textContent = `Caracteres: ${text.length}`;
-  metricasDeCadaItems[1].textContent = `Caracteres sin Espacio: ${text.replace(/\s/g, '').length}`;
+  metricasDeCadaItems[1].textContent = `Caracteres sin Espacio: ${analyzer.getCharacterCountExcludingSpaces(text)}`;
   metricasDeCadaItems[2].textContent = `Palabras: ${analyzer.getWordCount(text)}`;
   metricasDeCadaItems[3].textContent = `Números: ${analyzer.getNumberCount(text)}`;
   metricasDeCadaItems[4].textContent = `Suma Numeros: ${analyzer.getNumberSum(text)}`;
-  metricasDeCadaItems[5].textContent = `Promedio Longitud: ${analyzer.getAverageWordLength(text).toFixed(1)}`;
+  metricasDeCadaItems[5].textContent = `Promedio Longitud: ${analyzer.getAverageWordLength(text)}`;
 };
-
+//definimos la funcion
 const resultadoMetricas = () => {
   userInput.value = '';
   pruebaMetricas();
 };
-
+//eventos los 2 elementos
 userInput.addEventListener('keyup', pruebaMetricas);
 resetButton.addEventListener('click', resultadoMetricas);
 

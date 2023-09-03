@@ -9,22 +9,50 @@ body{
 /*li*/
 .Caracteres{
     background-color: rgb(187, 122, 204);
+    padding: 5px;
+    border: 1px solid #b1b0b0; /* se Agrega un borde a cada <li> */
+    margin: 5px;
+    border-radius: 9px;  
+    text-align: center;
 }
 .CaracteressinEspacio{
     background-color: rgba(188, 122, 204, 0.62);
+    padding: 5px;
+    border: 1px solid #b1b0b0; /* se Agrega un borde a cada <li> */
+    margin: 5px;
+    border-radius: 9px; 
+    text-align: center; 
 }
 .Palabras{
     background-color: rgba(188, 122, 204, 0.503);
+    padding: 5px;
+    border: 1px solid #b1b0b0; /* se Agrega un borde a cada <li> */
+    margin: 5px;
+    border-radius: 9px;  
+    text-align: center;
 }
 .Numeros{
-    background-color: rgba(188, 122, 204, 0.388);
+    background-color: rgba(188, 122, 204, 0.388);padding: 5px;
+    border: 1px solid #b1b0b0; /* se Agrega un borde a cada <li> */
+    margin: 5px;
+    border-radius: 9px;  
+    text-align: center;
 }
 .SumaNumeros{
-    background-color: rgba(188, 122, 204, 0.265);
+    background-color: rgba(188, 122, 204, 0.265);padding: 5px;
+    border: 1px solid #b1b0b0; /* se Agrega un borde a cada <li> */
+    margin: 5px;
+    border-radius: 9px;  
+    text-align: center;
 }
 .PromedioLongitud{
-    background-color: rgba(188, 122, 204, 0.126);
+    background-color: rgba(188, 122, 204, 0.126);padding: 5px;
+    border: 1px solid #b1b0b0; /* se Agrega un borde a cada <li> */
+    margin: 5px;
+    border-radius: 9px; 
+    text-align: center; 
 }
+
 /*nav*/
 .contenedor-li {
     list-style-type: none;
@@ -33,17 +61,7 @@ body{
     display: grid; /* crear cuadriculas en las li*/
     grid-template-columns: repeat(3, 200px); /* el primer numero son los grupos que quieres formar y el numero en px es el tamaño de la posicion  a lo largo*/
     gap: 2px; /* es el espacio que esta entre los li una debajo de otro*/
-  
 }
-.contenedor-li li {
-    padding: 5px;
-    border: 1px solid #b1b0b0; /* se Agrega un borde a cada <li> */
-    margin: 5px;
-    border-radius: 9px;  
-    text-align: center;
-    
-}
-
 /* espacio para escribir*/
 textarea[name="user-input"] {
     border: 2px solid #75c6f6 ;
