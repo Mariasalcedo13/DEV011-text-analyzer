@@ -4,12 +4,12 @@ const analyzer = {
     if (text.trim() === "") {
       return 0;
     } else {
-      const contarPalabras = text.trim().split(/\s+/);
-      const noNumeros = contarPalabras.filter(element => isNaN(element));
-      return noNumeros .length;
+      const words = text.trim().split(/\s+/);
+      return words.length;
     }
-
   },
+  
+    
  
 // trim elimina los espacio en blanco en una cadena de texto
 // split se usa para dividir una cadena en parte mas pequeña (/s+/)  en espacio blanco
@@ -32,13 +32,13 @@ const analyzer = {
 
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
-    const nosignos = text.replace(/[.,; ?¿!¡{}:'"-]/gi,"").split("");
-    console.log(nosignos)
-    if (nosignos[0]==="") {
-      return 0
-    }
-    else { 
-      return nosignos.length
+    if (text.trim() === "") {
+      return 0;
+    } 
+   
+  else {
+      const noSignos = text.replace(/[\s.,;?¿!¡{}:'"-]+/gi, "");
+      return noSignos.length;
     }
   },
   // lo que se hizo fue que con la variable almacenText almacenar la cadena de texto despues de eliminar y los signo de puntuacion 
