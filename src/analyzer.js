@@ -6,7 +6,9 @@ const analyzer = {
     } else {
       const words = text.trim().split(/\s+/);
       return words.length;
+      
     }
+    
   },
   
     

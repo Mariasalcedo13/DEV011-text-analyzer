@@ -14,6 +14,7 @@ const pruebaMetricas = () => {
   metricasDeCadaItems[3].textContent = `Números: ${analyzer.getNumberCount(text)}`;
   metricasDeCadaItems[4].textContent = `Suma Numeros: ${analyzer.getNumberSum(text)}`;
   metricasDeCadaItems[5].textContent = `Promedio Longitud: ${analyzer.getAverageWordLength(text)}`;
+  
 };
 //definimos la funcion
 const resultadoMetricas = () => {
