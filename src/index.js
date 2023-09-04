@@ -4,7 +4,7 @@ import analyzer from './analyzer.js';
 
 const userInput = document.querySelector('textarea[name="user-input"]');
 const resetButton = document.getElementById('reset-button');
-const metricasDeCadaItems = document.querySelectorAll('.contenedor-li li');
+const metricasDeCadaItems = document.querySelectorAll('ul li');
 
 const pruebaMetricas = () => {
   const text = userInput.value;

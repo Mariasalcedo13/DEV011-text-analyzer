@@ -15,46 +15,10 @@ body{
     border-radius: 9px;  
     text-align: center;
 }
-.CaracteressinEspacio{
-    background-color: rgba(188, 122, 204, 0.62);
-    padding: 5px;
-    border: 1px solid #b1b0b0; /* se Agrega un borde a cada <li> */
-    margin: 5px;
-    border-radius: 9px; 
-    text-align: center; 
-}
-.Palabras{
-    background-color: rgba(188, 122, 204, 0.503);
-    padding: 5px;
-    border: 1px solid #b1b0b0; /* se Agrega un borde a cada <li> */
-    margin: 5px;
-    border-radius: 9px;  
-    text-align: center;
-}
-.Numeros{
-    background-color: rgba(188, 122, 204, 0.388);padding: 5px;
-    border: 1px solid #b1b0b0; /* se Agrega un borde a cada <li> */
-    margin: 5px;
-    border-radius: 9px;  
-    text-align: center;
-}
-.SumaNumeros{
-    background-color: rgba(188, 122, 204, 0.265);padding: 5px;
-    border: 1px solid #b1b0b0; /* se Agrega un borde a cada <li> */
-    margin: 5px;
-    border-radius: 9px;  
-    text-align: center;
-}
-.PromedioLongitud{
-    background-color: rgba(188, 122, 204, 0.126);padding: 5px;
-    border: 1px solid #b1b0b0; /* se Agrega un borde a cada <li> */
-    margin: 5px;
-    border-radius: 9px; 
-    text-align: center; 
-}
+
 
 /*nav*/
-.contenedor-li {
+ul {
     list-style-type: none;
     display:flex;   
     justify-content:center;
