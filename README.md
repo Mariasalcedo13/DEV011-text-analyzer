@@ -756,3 +756,15 @@ en los archivos [test/analyzer.spec.js](test/analyzer.spec.js) y
 [read-only/test/e2e/app.spec.js](read-only/test/e2e/app.spec.js).
 También tendrás que ajustar las pruebas ya existentes de las
 funcionalidades requeridas.
+
+
+introduccion :
+Nuestra aplicación web, denominada "TextAnalyzer", es una herramienta versátil diseñada para analizar y proporcionar información útil sobre textos escritos en diversos contextos. Con TextAnalyzer, los usuarios pueden obtener estadísticas básicas sobre la estructura del texto, evaluar el tono emocional a través del análisis de sentimientos y medir la legibilidad del contenido. Esta aplicación se ha creado con la intención de facilitar la comprensión y el análisis de textos, ayudando a los usuarios a tomar decisiones informadas y obtener una visión más profunda de la información presentada en los textos que cargan. 
+Funcionalidad de la Aplicación:
+La aplicación TextAnalyzer ofrece las siguientes funcionalidades clave: 1. **Conteo de Palabras, Caracteres, Oraciones y Párrafos: ** TextAnalyzer proporciona estadísticas básicas que incluyen el número de palabras, caracteres, oraciones y párrafos en el texto. Esta información ayuda a los usuarios a tener una idea general de la estructura y longitud del texto. 
+Decisiones de Diseño: 
+Al desarrollar TextAnalyzer, se tomaron varias decisiones de diseño para garantizar una experiencia de usuario efectiva: - Interfaz Intuitiva Se diseñó una interfaz de usuario limpia y fácil de usar para que los usuarios puedan cargar y analizar textos de manera rápido y sencillo.
+
+Resultados Claros:
+ Los resultados del análisis se presentan de manera organizada y comprensible, lo que permite a los usuarios interpretar fácilmente la información proporcionada. 
+ 
