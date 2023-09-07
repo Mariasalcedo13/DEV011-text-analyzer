@@ -5,7 +5,8 @@ const analyzer = {
       return 0;
     } else {
       const words = text.trim().split(/\s+/);
-      return words.length;
+      const wordsNonum= words.filter(Element => isNaN(Element));
+      return wordsNonum.length;
       
     }
     

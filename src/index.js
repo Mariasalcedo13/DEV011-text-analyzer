@@ -8,7 +8,7 @@ const metricasDeCadaItems = document.querySelectorAll('ul li');
 
 const pruebaMetricas = () => {
   const text = userInput.value;
-  metricasDeCadaItems[0].textContent = `Caracteres: ${text.length}`;
+  metricasDeCadaItems[0].textContent = `Caracteres: ${analyzer.getCharacterCount(text)}`;
   metricasDeCadaItems[1].textContent = `Caracteres sin Espacio: ${analyzer.getCharacterCountExcludingSpaces(text)}`;
   metricasDeCadaItems[2].textContent = `Palabras: ${analyzer.getWordCount(text)}`;
   metricasDeCadaItems[3].textContent = `Números: ${analyzer.getNumberCount(text)}`;
