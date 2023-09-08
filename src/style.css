@@ -19,8 +19,7 @@ body{
 
 /*nav*/
 ul {
-    list-style-type: none;
-    display:flex;   
+    list-style-type: none;  
     justify-content:center;
     display: grid; /* crear cuadriculas en las li*/
     grid-template-columns: repeat(3, 200px); /* el primer numero son los grupos que quieres formar y el numero en px es el tamaño de la posicion  a lo largo*/
@@ -45,5 +44,9 @@ textarea[name="user-input"] {
    
  }
  footer{
-    text-align: right;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #66036d28;
  }

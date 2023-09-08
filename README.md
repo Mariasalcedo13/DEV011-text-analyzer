@@ -759,7 +759,7 @@ funcionalidades requeridas.
 
 
 introduccion :
-Nuestra aplicación web, denominada "TextAnalyzer", es una herramienta versátil diseñada para analizar y proporcionar información útil sobre textos escritos en diversos contextos. Con TextAnalyzer, los usuarios pueden obtener estadísticas básicas sobre la estructura del texto, evaluar el tono emocional a través del análisis de sentimientos y medir la legibilidad del contenido. Esta aplicación se ha creado con la intención de facilitar la comprensión y el análisis de textos, ayudando a los usuarios a tomar decisiones informadas y obtener una visión más profunda de la información presentada en los textos que cargan. 
+Nuestra aplicación web, denominada "TextAnalyzer", es una herramienta versátil diseñada para analizar y proporcionar información útil sobre textos escritos en diversos contextos. Con TextAnalyzer, los usuarios pueden obtener estadísticas básicas sobre la estructura del texto. Esta aplicación se ha creado con la intención de facilitar la comprensión y el análisis de textos, ayudando a los usuarios a tomar decisiones informadas y obtener una visión más profunda de la información presentada en los textos que cargan. 
 Funcionalidad de la Aplicación:
 La aplicación TextAnalyzer ofrece las siguientes funcionalidades clave: 1. **Conteo de Palabras, Caracteres, Oraciones y Párrafos: ** TextAnalyzer proporciona estadísticas básicas que incluyen el número de palabras, caracteres, oraciones y párrafos en el texto. Esta información ayuda a los usuarios a tener una idea general de la estructura y longitud del texto. 
 Decisiones de Diseño: 
